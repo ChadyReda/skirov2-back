@@ -1,0 +1,12 @@
+import { Request, Response } from 'express';
+import { AuthRequest } from '../types';
+export declare function list(req: Request, res: Response): Promise<void>;
+export declare function getOne(req: Request, res: Response): Promise<void>;
+export declare function getById(req: Request, res: Response): Promise<void>;
+export declare function getFeatured(req: Request, res: Response): Promise<void>;
+export declare function getNewArrivals(req: Request, res: Response): Promise<void>;
+export declare function getRelated(req: Request, res: Response): Promise<void>;
+export declare function create(req: AuthRequest, res: Response): Promise<void>;
+export declare function update(req: AuthRequest, res: Response): Promise<void>;
+export declare function remove(req: AuthRequest, res: Response): Promise<void>;
+export declare function uploadImages(req: AuthRequest, res: Response): Promise<void>;
