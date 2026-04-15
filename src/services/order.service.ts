@@ -5,8 +5,8 @@ import { generateOrderNumber } from '../utils/orderNumber'
 import { OrderStatus } from '../types'
 
 const FREE_SHIPPING_AT = 100
-const SHIPPING_COST = 9.99
-const TAX_RATE = 0.08
+const SHIPPING_COST = 0
+const TAX_RATE = 0
 
 const ORDER_INCLUDE = {
   items: true,
@@ -80,7 +80,7 @@ export async function createOrder(input: {
         productId,
         name: product.name,
         image: primaryImage,
-        price: Number(product.price) + Number(variant.additionalPrice),
+        price: Number(product.price),
         quantity,
         variantSku,
         variantLabel: variantParts.join(' / ') || variantSku,
