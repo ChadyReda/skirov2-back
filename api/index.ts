@@ -25,6 +25,8 @@ const allowedOrigins = [
   "https://website-frontend-skiro.vercel.app",
   "http://localhost:3000",
   "http://localhost:5173",
+  "https://www.skirostore.com/",
+  "https://skirostore.com/"
 ];
 
 app.use(
